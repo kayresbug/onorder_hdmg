@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@android:drawable/progress_horizontal">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/textView2"
+        android:gravity="center_vertical|center_horizontal">
+
+        <EditText
+            android:id="@+id/editResponse1"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:textIsSelectable="true"
+            android:editable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            android:enabled="true"
+            android:shadowColor="@android:color/darker_gray"
+            android:inputType="number"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/screen_background4" />
+
+        <EditText
+            android:id="@+id/editResponse2"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:textIsSelectable="true"
+            android:editable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            android:enabled="true"
+            android:shadowColor="@android:color/darker_gray"
+            android:inputType="number"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/screen_background4" />
+
+        <EditText
+            android:id="@+id/editResponse3"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:textIsSelectable="true"
+            android:editable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            android:enabled="true"
+            android:shadowColor="@android:color/darker_gray"
+            android:inputType="number"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/screen_background4" />
+
+        <EditText
+            android:id="@+id/editResponse4"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:textIsSelectable="true"
+            android:editable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            android:enabled="true"
+            android:shadowColor="@android:color/darker_gray"
+            android:inputType="number"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/screen_background4" />
+
+        <EditText
+            android:id="@+id/editResponse5"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:textIsSelectable="true"
+            android:editable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            android:enabled="true"
+            android:shadowColor="@android:color/darker_gray"
+            android:inputType="number"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/screen_background4" />
+
+        <EditText
+            android:id="@+id/editResponse6"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:textIsSelectable="true"
+            android:editable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            android:enabled="true"
+            android:shadowColor="@android:color/darker_gray"
+            android:inputType="number"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/screen_background4" />
+
+        <EditText
+            android:id="@+id/editResponse7"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:textIsSelectable="true"
+            android:editable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            android:enabled="true"
+            android:shadowColor="@android:color/darker_gray"
+            android:inputType="number"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/screen_background4" />
+
+        <EditText
+            android:id="@+id/editResponse8"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:textIsSelectable="true"
+            android:editable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            android:enabled="true"
+            android:shadowColor="@android:color/darker_gray"
+            android:inputType="number"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/screen_background4" />
+
+    </LinearLayout>
+</LinearLayout>

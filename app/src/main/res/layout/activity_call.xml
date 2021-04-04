@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CallActivity">
+
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_height="592dp"
+        android:background="@drawable/call_back"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/nanumsquareb"
+            android:letterSpacing="-0.05"
+            android:lineSpacingExtra="3sp"
+            android:text="직원호출"
+            android:textColor="#2a2a2a"
+            android:textSize="24sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/nanumsquarer"
+            android:letterSpacing="-0.02"
+            android:lineSpacingExtra="8sp"
+            android:text="개수 선택 후 주문하기 버튼 눌러주시면 됩니다."
+            android:textColor="#2a2a2a"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:background="#d4ae52" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/callactivity_layout_call1"
+                android:layout_width="202dp"
+                android:layout_height="90dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/call">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareb"
+                    android:textStyle="normal"
+                    android:textSize="15sp"
+                    android:textColor="#2a2a2a"
+                    android:letterSpacing="-0.03"
+                    android:lineSpacingExtra="5sp"
+                    android:text="인원 추가"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="73dp"
+                    />
+
+                <TextView
+                    android:id="@+id/callactivity_text_call1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="97dp"
+                    android:layout_marginTop="49dp"
+                    android:fontFamily="@font/poppins"
+                    android:letterSpacing="-0.05"
+                    android:lineSpacingExtra="8sp"
+                    android:text="0"
+                    android:textColor="#2a2a2a"
+                    android:textSize="15sp"
+                    android:textStyle="normal"/>
+
+                <ImageView
+                    android:id="@+id/callactivity_img_minus1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="63dp"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/minus_btn" />
+
+                <ImageView
+                    android:id="@+id/callactivity_img_plus1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/plus_btn" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/callactivity_layout_call2"
+                android:layout_width="202dp"
+                android:layout_height="90dp"
+                android:background="@drawable/call">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="73dp"
+                    android:layout_marginTop="37dp"
+                    android:fontFamily="@font/nanumsquareb"
+                    android:letterSpacing="-0.03"
+                    android:lineSpacingExtra="5sp"
+                    android:text="반찬 추가"
+                    android:textColor="#2a2a2a"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/callactivity_text_call2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="97dp"
+                    android:layout_marginTop="49dp"
+                    android:fontFamily="@font/poppins"
+                    android:letterSpacing="-0.05"
+                    android:lineSpacingExtra="8sp"
+                    android:text="0"
+                    android:textColor="#2a2a2a"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/callactivity_img_minus2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="63dp"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/minus_btn"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/callactivity_img_plus2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/plus_btn"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/callactivity_layout_call3"
+                android:layout_width="202dp"
+                android:layout_height="90dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/call">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="79dp"
+                    android:layout_marginTop="37dp"
+                    android:fontFamily="@font/nanumsquareb"
+                    android:letterSpacing="-0.03"
+                    android:lineSpacingExtra="5sp"
+                    android:text="물 요청"
+                    android:textColor="#2a2a2a"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/callactivity_text_call3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="97dp"
+                    android:layout_marginTop="49dp"
+                    android:fontFamily="@font/poppins"
+                    android:letterSpacing="-0.05"
+                    android:lineSpacingExtra="8sp"
+                    android:text="0"
+                    android:textColor="#2a2a2a"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/callactivity_img_minus3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="63dp"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/minus_btn"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/callactivity_img_plus3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/plus_btn"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/callactivity_layout_call4"
+                android:layout_width="202dp"
+                android:layout_height="90dp"
+                android:background="@drawable/call">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareb"
+                    android:textStyle="normal"
+                    android:textSize="15sp"
+                    android:textColor="#2a2a2a"
+                    android:letterSpacing="-0.03"
+                    android:lineSpacingExtra="5sp"
+                    android:text="직원호출"
+                    android:layout_marginTop="37dp"
+                    android:layout_marginLeft="79dp"
+                    />
+                <TextView
+                    android:id="@+id/callactivity_text_call4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:textStyle="normal"
+                    android:textSize="15sp"
+                    android:textColor="#2a2a2a"
+                    android:letterSpacing="-0.05"
+                    android:lineSpacingExtra="8sp"
+                    android:text="0"
+                    android:layout_marginTop="49dp"
+                    android:layout_marginLeft="97dp"
+                    android:visibility="gone"
+                    />
+                <ImageView
+                    android:id="@+id/callactivity_img_minus4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/minus_btn"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="63dp"
+                    android:visibility="gone"/>
+                <ImageView
+                    android:id="@+id/callactivity_img_plus4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/plus_btn"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="120dp"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/callactivity_layout_call5"
+                android:layout_width="202dp"
+                android:layout_height="90dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/call">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareb"
+                    android:textStyle="normal"
+                    android:textSize="15sp"
+                    android:textColor="#2a2a2a"
+                    android:letterSpacing="-0.03"
+                    android:lineSpacingExtra="5sp"
+                    android:text="물수건 요청"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="66dp"
+                    />
+                <TextView
+                    android:id="@+id/callactivity_text_call5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:textStyle="normal"
+                    android:textSize="15sp"
+                    android:textColor="#2a2a2a"
+                    android:letterSpacing="-0.05"
+                    android:lineSpacingExtra="8sp"
+                    android:text="0"
+                    android:layout_marginTop="49dp"
+                    android:layout_marginLeft="97dp"
+                    />
+                <ImageView
+                    android:id="@+id/callactivity_img_minus5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/minus_btn"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="63dp"/>
+                <ImageView
+                    android:id="@+id/callactivity_img_plus5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/plus_btn"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="120dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/callactivity_layout_call6"
+                android:layout_width="202dp"
+                android:layout_height="90dp"
+                android:background="@drawable/call">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareb"
+                    android:textStyle="normal"
+                    android:textSize="15sp"
+                    android:textColor="#2a2a2a"
+                    android:letterSpacing="-0.03"
+                    android:lineSpacingExtra="5sp"
+                    android:text="기타 직원 &amp; 직원 호출"
+                    android:layout_marginTop="37dp"
+                    android:layout_marginLeft="37dp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/callactivity_layout_ok"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/call_ok"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquarer"
+                    android:textStyle="normal"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+                    android:letterSpacing="-0.03"
+                    android:lineSpacingExtra="3sp"
+                    android:text="호출하기"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/callactivity_layout_no"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:background="@drawable/call_ok">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquarer"
+                    android:textStyle="normal"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+                    android:letterSpacing="-0.03"
+                    android:lineSpacingExtra="3sp"
+                    android:text="취소하기"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".CallActivity">
+
+    <RelativeLayout
+        android:layout_width="500dp"
+        android:layout_height="592dp"
+        android:background="@drawable/call_back"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumsquareb"
+            android:textStyle="normal"
+            android:textSize="24sp"
+            android:textColor="#2a2a2a"
+            android:letterSpacing="-0.05"
+            android:lineSpacingExtra="3sp"
+            android:text="대리운전"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="40dp"
+            />
+        <TextView
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="86dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumsquarer"
+            android:textStyle="normal"
+            android:textSize="12sp"
+            android:textColor="#2a2a2a"
+            android:letterSpacing="-0.02"
+            android:lineSpacingExtra="8sp"
+            android:text="연락 받으실 번호를 입력해주세요.
+가장 가까운 대리 기사님으로 빠르게 배정해 드립니다."
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="174dp"
+            android:src="@drawable/car_img"/>
+
+        <EditText
+            android:id="@+id/phone_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="144dp"
+            android:layout_marginRight="40dp"
+            android:fontFamily="@font/poppins"
+            android:hint="010-1234-5678"
+            android:inputType="phone" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="446dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+
+            android:gravity="center"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/calldriveractivity_layout_ok"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/call_ok"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumsquarer"
+                android:textStyle="normal"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:letterSpacing="-0.03"
+                android:lineSpacingExtra="3sp"
+                android:text="호출하기"
+                />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/calldriveractivity_layout_no"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:background="@drawable/call_ok">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquarer"
+                    android:textStyle="normal"
+                    android:textSize="18sp"
+                   android:textColor="#ffffff"
+                    android:letterSpacing="-0.03"
+                    android:lineSpacingExtra="3sp"
+                    android:text="취소하기"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

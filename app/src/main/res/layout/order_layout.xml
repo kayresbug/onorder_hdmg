@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="10dp">
+
+    <RelativeLayout
+        android:id="@+id/order_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:background="@drawable/order_back">
+        <RelativeLayout
+            android:layout_width="12.7dp"
+            android:layout_height="12.7dp"
+            android:background="@drawable/order_count">
+            <TextView
+                android:id="@+id/order_count"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textStyle="normal"
+                android:textSize="8sp"
+                android:textColor="#181818"
+                android:lineSpacingExtra="4sp"
+                android:text="1"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/order_text"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanumsquareb"
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:textColor="#999999"
+            android:letterSpacing="-0.03"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:lineSpacingExtra="2sp"
+            android:text="마가리타 피자"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

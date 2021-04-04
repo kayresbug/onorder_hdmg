@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context=".MenuActivity">
+
+    <LinearLayout
+        android:id="@+id/menuactivity_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2a2a2a"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="102.7dp"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/menuactivity_text_table"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:lineSpacingExtra="16sp"
+                    android:text="20"
+                    android:textColor="#dfb655"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menuactivity_layout_submenu"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="#2a2a2a"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/menuactivity_layout_btn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/menuactivity_text_btn1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/nanumsquareb"
+                        android:letterSpacing="-0.03"
+                        android:lineSpacingExtra="1.3sp"
+                        android:text="인기메뉴"
+                        android:textColor="#ffcf5d"
+                        android:textSize="18sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menuactivity_layout_btn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/menuactivity_text_btn2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/nanumsquarer"
+                        android:letterSpacing="-0.03"
+                        android:lineSpacingExtra="1.3sp"
+                        android:text="탕/찌게"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menuactivity_layout_btn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/menuactivity_text_btn3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/nanumsquarer"
+                        android:letterSpacing="-0.03"
+                        android:lineSpacingExtra="1.3sp"
+                        android:text="튀김메"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menuactivity_layout_btn4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/menuactivity_text_btn4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/nanumsquarer"
+                        android:letterSpacing="-0.03"
+                        android:lineSpacingExtra="1.3sp"
+                        android:text="요리메뉴"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menuactivity_layout_btn5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/menuactivity_text_btn5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/nanumsquarer"
+                        android:letterSpacing="-0.03"
+                        android:lineSpacingExtra="1.3sp"
+                        android:text="주류"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menuactivity_layout_btn6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/menuactivity_text_btn6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/nanumsquarer"
+                        android:letterSpacing="-0.03"
+                        android:lineSpacingExtra="1.3sp"
+                        android:text="반찬 TakeOut"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menuactivity_layout_btn7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/menuactivity_text_btn7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/nanumsquarer"
+                        android:letterSpacing="-0.03"
+                        android:lineSpacingExtra="1.3sp"
+                        android:text="반찬 TakeOut"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        android:textStyle="normal"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menuactivity_layout_btn8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:visibility="invisible">
+
+                    <TextView
+                        android:id="@+id/menuactivity_text_btn8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/nanumsquarer"
+                        android:letterSpacing="-0.03"
+                        android:lineSpacingExtra="1.3sp"
+                        android:text="반찬 TakeOut"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/menuactivity_layout_btn9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:visibility="invisible">
+
+                    <TextView
+                        android:id="@+id/menuactivity_text_btn9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/nanumsquarer"
+                        android:letterSpacing="-0.03"
+                        android:lineSpacingExtra="1.3sp"
+                        android:text="반찬 TakeOut"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        android:visibility="gone"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/menuactivity_img_calldriver"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:visibility="gone"
+                        android:src="@drawable/drive_btn" />
+
+                    <ImageView
+                        android:id="@+id/menuactivity_img_call"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="100dp"
+                        android:src="@drawable/call_btn" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menuactivity_layout_menu"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="#2a2a2a"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/menu_bottom"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="28dp"
+                android:src="@drawable/cart_icon"></ImageView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/order_recycler"
+                android:layout_width="600dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="7dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right">
+
+                <RelativeLayout
+                    android:id="@+id/menuactivity_layout_history"
+                    android:layout_width="93.3dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="8dp"
+                    android:visibility="gone"
+                    android:background="@drawable/order_back">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/nanumsquarer"
+                        android:letterSpacing="-0.03"
+                        android:lineSpacingExtra="2sp"
+                        android:text="결제내역"
+                        android:textColor="#999999"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/menuactivity_layout_payment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/order_back">
+
+                    <TextView
+                        android:id="@+id/menuactivity_text_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/nanumsquarer"
+                        android:text="총 0원 주문하기"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

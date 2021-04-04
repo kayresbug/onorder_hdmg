@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:background="@drawable/datail_back_on"
+    android:orientation="horizontal"
+    tools:context=".fragment.DetailFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/detailfragment_img"
+                android:layout_width="260.3dp"
+                android:layout_height="260.3dp" />
+            <TextView
+                android:id="@+id/detailfragment_text_event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/nanumsquareeb"
+                android:textSize="17sp"
+                android:visibility="invisible"
+                android:text="11~14시에는 공기밥 개별 무료제공됩니다."
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/menu_minus"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/minus_tn" />
+
+                <TextView
+                    android:id="@+id/detail_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:text="1"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/detail_count2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="10dp"
+                    android:text="인분"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/menu_plus"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/add_button" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/detailfragment_text_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareeb"
+                    android:letterSpacing="-0.05"
+                    android:lineSpacingExtra="3.3sp"
+                    android:text="통 문어 짬뽕"
+                    android:textColor="#2a2a2a"
+                    android:textSize="22.7sp"
+                    android:textStyle="normal" />
+                <TextView
+                    android:id="@+id/detailfragment_text_name_sub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareeb"
+                    android:letterSpacing="-0.05"
+                    android:lineSpacingExtra="3.3sp"
+                    android:text="(2인분 이상 주문 가능. 공기밥별도)"
+                    android:textColor="#2a2a2a"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="5dp"
+                    android:visibility="invisible"
+                    android:textStyle="normal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right">
+                    <TextView
+                        android:id="@+id/detailfragment_layout_cancle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/black"
+                        android:paddingLeft="40dp"
+                        android:fontFamily="@font/nanumsquareeb"
+                        android:text="닫기"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/detailfragment_text_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquarer"
+                    android:letterSpacing="-0.03"
+                    android:lineSpacingExtra="6sp"
+                    android:text="불 향이 가득한 짬뽕 국물과 오동통통한 면발 통 문어와 해산물의 잔치"
+                    android:textColor="#2a2a2a"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/radio_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/radio_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="맵기조절"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <RadioGroup
+                            android:id="@+id/radioGroup"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/l_btn1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:checked="true"
+                                android:text="보통맛(살짝 매콤한맛)"
+                                android:textColor="@color/black" />
+
+                            <RadioButton
+                                android:id="@+id/l_btn2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="매운맛(불닭볶음면 만큼 매운맛)"
+                                android:textColor="@color/black" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="사리추가"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/check_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"
+                        android:layout_marginTop="12dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <CheckBox
+                                android:id="@+id/opt1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="공기밥 (+1,000원)"
+                                android:textColor="@color/black" />
+                            <CheckBox
+                                android:id="@+id/opt2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="떡사리 (+1,000원)"
+                                android:textColor="@color/black" />
+                            <CheckBox
+                                android:id="@+id/opt3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="쫄면사리 (+2,000원)"
+                                android:textColor="@color/black" />
+                            <CheckBox
+                                android:id="@+id/opt4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="우동사리 (+2,000원)"
+                                android:textColor="@color/black" />
+                            <CheckBox
+                                android:id="@+id/opt5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="비엔나사리 (+2,000원)"
+                                android:textColor="@color/black" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <CheckBox
+                                android:id="@+id/opt6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="라면사리 (+1,000원)"
+                                android:textColor="@color/black" />
+                            <CheckBox
+                                android:id="@+id/opt7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="감자당면 (+2,000원)"
+                                android:textColor="@color/black" />
+                            <CheckBox
+                                android:id="@+id/opt8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="콩나물추가 (+1,000원)"
+                                android:textColor="@color/black" />
+                            <CheckBox
+                                android:id="@+id/opt9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="숙주나물추가 (+1,000원)"
+                                android:textColor="@color/black" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+
+
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumsquareeb"
+                    android:letterSpacing="-0.03"
+                    android:lineSpacingExtra="1.3sp"
+                    android:text="수량을 설정해 주세요"
+                    android:textColor="#2a2a2a"
+                    android:textSize="10sp"
+                    android:textStyle="normal"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/detailfragment_text_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nanumsquareeb"
+                            android:letterSpacing="-0.02"
+                            android:lineSpacingExtra="3.3sp"
+                            android:text="총"
+                            android:textColor="#2a2a2a"
+                            android:textSize="22.7sp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/detailfragment_layout_add"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/detail_ok"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nanumsquareeb"
+                            android:letterSpacing="-0.03"
+                            android:lineSpacingExtra="1.3sp"
+                            android:text="장바구니"
+                            android:textColor="#ffffff"
+                            android:textSize="30sp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

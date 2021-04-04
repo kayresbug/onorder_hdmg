@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: onorder.Sam4sandroidsdk.Sam4sandroidsdk">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Sam4sandroidsdk/Sam4sandroidsdk.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/onorder.iml" filepath="$PROJECT_DIR$/.idea/modules/onorder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Sam4sandroidsdk/onorder.Sam4sandroidsdk.iml" filepath="$PROJECT_DIR$/.idea/modules/Sam4sandroidsdk/onorder.Sam4sandroidsdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/onorder.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/onorder.app.iml" />
+    </modules>
+  </component>
+</project>

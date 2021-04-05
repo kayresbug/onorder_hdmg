@@ -881,7 +881,7 @@ public class DetailFragment extends Fragment {
         if (time < 14){
             opt1.setVisibility(View.VISIBLE);
             if (name.contains("흑돼지")){
-                eventText.setVisibility(View.VISIBLE);
+                eventText.setVisibility(View.GONE);
             }
         }else{
 
